@@ -103,7 +103,7 @@ terlampir file BRD berdasarkan SLR dengan nama file BRD.pdf
 4. cd src
 5. code .
 6. template website dengan ide saya diambil dari : https://themewagon.com/themes/business/
-7. cd resource/views
+7. cd resources/views
 8. mkdir layouts && mkdir pages && mkdir partials
 9. cd layouts
 10. touch app.blade.php

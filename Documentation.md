@@ -3,88 +3,140 @@
 ## 20230801544 - RICHIE YAPUTRA
 # PROSES SLR
 ```bash
-1. https://themewagon.com/themes/business/ Rumpun Ilmu : software Engineering Deskripsi : Bikin Aplikasi Web P (Platform) : Web Apps untuk Surat menyurat dan TTE I (Invervention) : Teknologi laravel filament dimana ada dosen, admin dan mahasiswa C (Comparison) = Masih menggunakan manual O (Outcome) = Aplikasi web yang bisa mahasiswa input form, admin persetujuan form dan dosen di plot oleh admin S (Suspect) = Aplikasi mempermudah dalam perencanaaan sidang sempro dan skripsi Berikan saya riset question (rq) terkait ide penelitian diatas!
+1. https://themewagon.com/themes/business/
+Rumpun Ilmu : software Engineering
+Deskripsi : Bikin Aplikasi Web
+P (Platform) : Web Apps untuk absensi QR
+I (Invervention) : Teknologi laravel filament dimana ada User dan HRD 
+C (Comparison) = Masih menggunakan mesin sidik jari
+O (Outcome) = Aplikasi web yang dimana User dapat masuk untuk absen QR, HRD dapat mengedit, menambah, menghapus, membaca data User dan HRD sendiri
+S (Suspect) = Aplikasi mempermudah dalam menghitung gaji
+
+Berikan saya riset question (rq) terkait ide penelitian diatas!
 ```
 # RESPOND
 ```bash
-Berdasarkan deskripsi ide penelitian yang Anda berikan, berikut adalah beberapa Research Question (RQ) atau Pertanyaan Penelitian yang dapat dikembangkan. RQ ini dirancang untuk mengarahkan penelitian, pengembangan, dan evaluasi aplikasi web yang akan dibangun.
-Rumusan RQ mengikuti konteks PICOS yang Anda sediakan:
-•	Population/Platform: Aplikasi Web Surat Menyurat & TTE (Tanda Tangan Elektronik) untuk proses akademik (sempro/skripsi).
-•	Intervention: Pengembangan sistem menggunakan Laravel Filament dengan peran Dosen, Admin, dan Mahasiswa.
-•	Comparison: Sistem manual yang sedang berjalan.
-•	Outcome: Terciptanya aplikasi yang mempermudah input form oleh mahasiswa, persetujuan oleh admin, dan plotting dosen.
-•	Setting/Context: Lingkungan perguruan tinggi (Software Engineering) untuk mempermudah perencanaan sidang.
-________________________________________
-Kategori 1: RQ tentang Kebutuhan dan Analisis Sistem (Sebelum Pengembangan)
-Pertanyaan ini berfokus pada tahap analisis untuk memahami masalah secara mendalam sebelum membangun aplikasi.
-•	RQ1.1: Apa saja pain point dan ketidakefisienan dalam proses pengajuan dan persetujuan surat (seperti surat permohonan sempro/skripsi) yang dilakukan secara manual di lingkungan program studi?
-•	RQ1.2: Fitur dan alur kerja apa saja yang menjadi kebutuhan kritikal bagi mahasiswa, admin, dan dosen dalam sebuah sistem surat menyurat dan TTE digital untuk mendukung proses sidang?
-________________________________________
-Kategori 2: RQ tentang Desain, Implementasi, dan Teknologi (Selama Pengembangan)
-Pertanyaan ini berfokus pada aspek teknis pembuatan aplikasi.
-•	RQ2.1: Bagaimana merancang arsitektur dan modul peran (mahasiswa, admin, dosen) dalam framework Laravel Filament untuk mengotomasi alur kerja surat menyurat dan plotting dosen?
-•	RQ2.2: Bagaimana implementasi Tanda Tangan Elektronik (TTE) yang aman dan memiliki kekuatan hukum yang sesuai dalam aplikasi berbasis Laravel untuk ditindaklanjuti oleh admin dan dosen?
-________________________________________
-Kategori 3: RQ tentang Evaluasi Fungsionalitas dan Kinerja (Setelah Pengembangan)
-Pertanyaan ini untuk menguji apakah aplikasi yang dibangun telah memenuhi tujuannya.
-•	RQ3.1: Sejauh mana aplikasi web yang dibangun dapat menangani seluruh alur bisnis pengajuan surat, persetujuan admin, dan plotting dosen untuk keperluan sidang?
-•	RQ3.2: Bagaimana tingkat keakuratan dan keandalan sistem dalam mengelola data pengajuan, menghindari konflik jadwal dosen, dan menghasilkan dokumen yang sah?
-________________________________________
-Kategori 4: RQ tentang Pengukuran Dampak dan Manfaat (Perbandingan dengan Sistem Lama)
-Pertanyaan ini membandingkan sistem baru dengan sistem manual untuk mengukur keberhasilannya.
-•	RQ4.1: Apakah terdapat perbedaan yang signifikan dalam waktu penyelesaian proses pengajuan surat sidang antara sistem manual dan aplikasi web yang dikembangkan?
-•	RQ4.2: Bagaimana persepsi pengguna (mahasiswa, admin, dan dosen) terhadap aspek kemudahan penggunaan, efisiensi waktu, dan kejelasan alur kerja pada aplikasi web dibandingkan dengan proses manual?
-________________________________________
-Saran Riset Question Utama (Primary RQ)
-Untuk fokus penelitian, Anda dapat memilih satu atau dua RQ utama yang menjadi inti. Berdasarkan deskripsi Anda, berikut dua RQ yang sangat kuat:
-1.	RQ Utama (Desain & Implementasi):
-"Bagaimana merancang dan mengimplementasikan aplikasi web surat menyurat dengan Tanda Tangan Elektronik (TTE) berbasis Laravel Filament untuk mengotomasi proses pengajuan sidang mahasiswa, persetujuan admin, dan plotting dosen?"
-o	(RQ ini langsung menargetkan Intervention dan Outcome)
-2.	RQ Utama (Evaluasi & Dampak):
-"Sejauh mana aplikasi web surat menyurat berbasis Laravel Filament dapat meningkatkan efisiensi waktu dan mengurangi kompleksitas dalam proses perencanaan sidang skripsi dibandingkan dengan sistem manual?"
-o	(RQ ini secara eksplisit membandingkan Intervention dengan Comparison dan mengukur Outcome)
-Dengan menggunakan Research Question ini, penelitian Anda akan memiliki arah yang jelas, terukur, dan dapat dipertanggungjawabkan secara akademis.
+Berdasarkan deskripsi ide penelitian yang Anda berikan, berikut adalah beberapa Riset Question (RQ) yang dapat dikembangkan. RQ-RQ ini dirancang untuk mengevaluasi efektivitas, kelayakan, dan dampak dari pengembangan aplikasi web absensi QR berbasis Laravel Filament, dengan membandingkannya terhadap sistem sidik jari yang sudah ada.
+
+Riset question ini dikelompokkan berdasarkan aspek yang diteliti.
+
+Kelompok RQ 1: Kinerja dan Fungsionalitas Sistem (Performance & Functionality)
+RQ ini berfokus pada kemampuan teknis dan keandalan sistem yang dibangun.
+
+RQ 1.1: Sejauh mana aplikasi web absensi QR berbasis Laravel Filament memenuhi kebutuhan fungsional untuk proses absensi (generate scan QR, input data) bagi User dan manajemen data (CRUD) bagi HRD?
+
+RQ 1.2: Bagaimana tingkat akurasi dan kecepatan sistem dalam merekam data absensi menggunakan metode QR code dibandingkan dengan sistem sidik jari?
+
+RQ 1.3: Seberapa handal (reliable) aplikasi web absensi QR dalam menangani jumlah pengguna (user) dan transaksi data yang berskala?
+
+Kelompok RQ 2: Efisiensi dan Produktivitas (Efficiency & Productivity)
+RQ ini mengevaluasi dampak sistem baru terhadap alur kerja dan penghematan sumber daya.
+
+RQ 2.1: Bagaimana perbandingan waktu yang dibutuhkan untuk proses absensi harian (dari user) dan pengolahan data absensi (oleh HRD) antara sistem absensi QR dan sistem sidik jari?
+
+RQ 2.2: Sejauh mana aplikasi web absensi QR dapat mengurangi kesalahan manusia (human error) dalam perhitungan jam kerja dan data kehadiran karyawan dibandingkan sistem sebelumnya?
+
+RQ 2.3: Bagaimana pengaruh penerapan aplikasi web absensi QR terhadap efisiensi waktu HRD dalam menghitung gaji karyawan yang terkait dengan data kehadiran?
+
+Kelompok RQ 3: Penerimaan dan Pengalaman Pengguna (User Acceptance & Experience)
+RQ ini mengukur persepsi dan kemudahan penggunaan dari perspektif pengguna langsung (User dan HRD).
+
+RQ 3.1: Bagaimana persepsi User (karyawan) terhadap kemudahan penggunaan (usability) dan kepuasan mereka dalam menggunakan aplikasi web absensi QR dibandingkan dengan mesin sidik jari?
+
+RQ 3.2: Bagaimana persepsi HRD terhadap kemudahan penggunaan (usability) dan utilitas fitur-fitur manajemen data (CRUD) dalam aplikasi web absensi QR?
+
+RQ 3.3: Faktor-faktor apa saja (seperti kemudahan, kecepatan, keandalan) yang paling mempengaruhi penerimaan (acceptance) pengguna terhadap sistem absensi QR yang baru?
+
+Kelompok RQ 4: Dampak dan Manfaat Bisnis (Business Impact & Outcome)
+RQ ini menyelidiki hasil akhir dan nilai tambah dari sistem yang diusulkan, sesuai dengan outcome yang diharapkan.
+
+RQ 4.1: Sejauh mana aplikasi web absensi QR dapat mempermudah dan mempercepat proses penghitungan gaji yang didasarkan pada data kehadiran?
+
+RQ 4.2: Apa saja kelebihan dan kekurangan implementasi sistem absensi QR berbasis web dibandingkan dengan sistem sidik jari dari segi biaya, pemeliharaan, dan skalabilitas?
+
+RQ 4.3: Bagaimana dampak sistem baru terhadap akurasi dan transparansi data kehadiran serta penggajian dalam organisasi?
+
+Saran Pemilihan RQ untuk Penelitian:
+Untuk penelitian Skripsi/S1, fokus pada satu kelompok RQ, misalnya Kelompok 3 (User Experience) atau Kelompok 1 (Fungsionalitas). Gabungkan RQ 1.1 dengan RQ 3.1 akan menjadi penelitian yang solid.
+
+Untuk penelitian Tesis/S2, Anda bisa menggabungkan dua kelompok, misalnya Kelompok 2 (Efisiensi) dan Kelompok 4 (Dampak Bisnis). RQ 2.3 dan RQ 4.1 memiliki hubungan yang sangat erat.
+
+RQ yang melibatkan perbandingan langsung (seperti RQ 1.2, RQ 2.1, RQ 4.2) membutuhkan data dari sistem lama (sidik jari) dan sistem baru (QR) untuk dianalisis.
+
+Dengan menggunakan riset question ini, penelitian Anda akan memiliki arah yang jelas dan terukur untuk mengevaluasi kesuksesan pengembangan aplikasi web absensi QR yang Anda usulkan.
 '''
 
 # PROSES RQ
 ```bash
-2. Kategori 2: RQ tentang Desain, Implementasi, dan Teknologi (Selama Pengembangan) Pertanyaan ini berfokus pada aspek teknis pembuatan aplikasi. RQ2.1: Bagaimana merancang arsitektur dan modul peran (mahasiswa, admin, dosen) dalam framework Laravel Filament untuk mengotomasi alur kerja surat menyurat dan plotting dosen? RQ2.2: Bagaimana implementasi Tanda Tangan Elektronik (TTE) yang aman dan memiliki kekuatan hukum yang sesuai dalam aplikasi berbasis Laravel untuk ditindaklanjuti oleh admin dan dosen? dari sini perkirakan JUDUL YANG BAIK DAN MENARIK NYA APA
+Kelompok RQ 1: Kinerja dan Fungsionalitas Sistem (Performance & Functionality)
+RQ ini berfokus pada kemampuan teknis dan keandalan sistem yang dibangun.
+
+RQ 1.1: Sejauh mana aplikasi web absensi QR berbasis Laravel Filament memenuhi kebutuhan fungsional untuk proses absensi (generate scan QR, input data) bagi User dan manajemen data (CRUD) bagi HRD?
+
+dari sini perkirakan JUDUL YANG BAIK DAN MENARIK NYA APA
 '''
 
 # RESPOND
 ```bash
-Tentu! Berdasarkan RQ 2.1 dan 2.2, berikut adalah beberapa opsi judul penelitian yang baik dan menarik, dengan fokus pada aspek desain, implementasi, dan teknologi.
-Konsep 1: Fokus pada "Pembangunan" dan "Automasi"
-Judul-judul ini menekankan pada tindakan menciptakan sistem yang mengotomasi proses yang sebelumnya manual.
-1.	Perancangan dan Implementasi Sistem Informasi Surat Menyurat dan Tanda Tangan Elektronik (TTE) untuk Automasi Proses Sidang Skripsi Berbasis Laravel Filament
-o	Kelebihan: Sangat komprehensif, jelas, dan langsung mencakup semua elemen (Surat, TTE, Automasi, Sidang, Teknologi).
-2.	Pengembangan Aplikasi Web Automasi Pengajuan dan Persetujuan Sidang Skripsi dengan Fitur Tanda Tangan Digital Menggunakan Framework Laravel Filament
-o	Kelebihan: Menggunakan kata kunci "Automasi" dan "Pengajuan dan Persetujuan" yang sangat relevan dengan outcome penelitian.
-3.	Membangun Sistem Workflow Digital untuk Surat Tugas Dosen Penguji dengan Integrasi Tanda Tangan Elektronik Berbasis Web
-o	Kelebihan: Lebih spesifik pada outcome "plotting dosen", menggunakan istilah "Workflow Digital" yang terdengar lebih profesional.
-Konsep 2: Fokus pada "Workflow" atau "Alur Kerja"
-Konsep ini menyoroti efisiensi dan pengelolaan alur bisnis yang menjadi inti dari aplikasi Anda.
-4.	Implementasi Workflow Management System untuk Proses Akademik Sidang Skripsi dengan Modul Tanda Tangan Elektronik (TTE)
-o	Kelebihan: Judulnya kuat, modern, dan fokus pada penyelesaian masalah "alur kerja". Kata "Management System" terdengar sophisticated.
-5.	Streamlining Academic Letter Workflow: A Laravel Filament-based Web Application with Electronic Signature for Thesis Examination
-o	Kelebihan: Menggunakan kata "Streamlining" yang sangat powerful untuk menunjukkan penyederhanaan dan percepatan proses. Cocok jika menginginkan judul yang berorientasi pada solusi bisnis.
-Konsep 3: Fokus pada "Integrasi" dan "Arsitektur Peran"
-Konsep ini menonjolkan aspek teknis integrasi fitur dan desain modul yang Anda rancang.
-6.	Integrasi Modul Multi-User dan Tanda Tangan Elektronik dalam Sistem Surat Menyurat Digital untuk Efisiensi Proses Plotting Dosen Penguji
-o	Kelebihan: Spesifik menjawab RQ 2.1 (modul peran) dan RQ 2.2 (TTE), menunjukkan kompleksitas teknis yang ditangani.
-7.	Arsitektur Peran dan Implementasi TTE pada Aplikasi Workflow Surat Tugas Dosen: Sebuah Studi Kasus dalam Framework Laravel Filament
-o	Kelebihan: Sangat akademis dan teknis. Kata "Arsitektur Peran" langsung merujuk pada inti dari RQ 2.1.
-________________________________________
+Tentu! Berdasarkan RQ 1.1, yang berfokus pada evaluasi fungsionalitas untuk kedua peran (User dan HRD), berikut beberapa pilihan judul yang baik dan menarik, dikelompokkan berdasarkan nuansanya.
+
+Kategori Judul: Langsung dan Jelas (Straightforward)
+Judul jenis ini sangat profesional dan cocok untuk laporan akademik seperti skripsi.
+
+Implementasi dan Evaluasi Fungsionalitas Aplikasi Absensi QR Code Berbasis Laravel Filament
+
+Mengapa menarik: Sangat komprehensif. Kata "Implementasi" menunjukkan Anda membangun sistemnya, dan "Evaluasi Fungsionalitas" langsung menjawab RQ 1.1.
+
+Analisis Kebutuhan Fungsional Sistem Absensi Berbasis Web Menggunakan QR Code dan Laravel Filament
+
+Mengapa menarik: Fokus pada proses analisis kebutuhan (requirement gathering) untuk memastikan semua fitur bagi User dan HRD terpenuhi.
+
+Pengembangan Sistem Absensi QR Code dengan Role-Based Access untuk User dan HRD Menggunakan Framework Laravel Filament
+
+Mengapa menarik: Menyoroti aspek "Role-Based Access" yang merupakan inti dari perbedaan fungsional antara User dan HRD.
+
+Kategori Judul: Lebih Modern dan Catchy
+Judul ini menggunakan analogi atau kata-kata yang lebih kekinian, cocok untuk proposal atau presentasi yang ingin menarik perhatian.
+
+Tap-In: Perancangan dan Analisis Sistem Absensi Digital Berbasis QR Code dengan Laravel Filament
+
+Mengapa menarik: "Tap-In" adalah metafora yang modern untuk absensi, singkat dan mudah diingat. Judul ini elegan dan jelas.
+
+From Fingerprint to QR Code: Pengembangan dan Uji Fungsi Aplikasi Absensi Web bagi User dan HRD
+
+Mengapa menarik: Menciptakan kontras antara teknologi lama dan baru, yang langsung menunjukkan nilai inovasi penelitian Anda.
+
+QR-Attend: Solusi Manajemen Kehadiran Berbasis Web dengan Fitur CRUD untuk HRD
+
+Mengapa menarik: Membuat "brand" atau nama produk untuk aplikasi Anda ("QR-Attend"). Fokus pada solusi dan menyebut fitur inti (CRUD) untuk HRD.
+
+Kategori Judul: Berfokus pada Solusi Bisnis
+Judul ini menekankan manfaat dari sistem yang dibangun.
+
+Sistem Absensi QR Code sebagai Solusi Efisiensi Proses Presensi dan Manajemen Data Karyawan
+
+Mengapa menarik: Menjual ide penelitiannya sebagai sebuah "solusi" untuk masalah efisiensi, yang berlaku untuk kedua belah pihak (User presensi, HRD manajemen data).
+
+Streamlining Attendance: Membangun Aplikasi Web Absensi dengan Laravel Filament untuk Kemudahan User dan Admin HRD
+
+Mengapa menarik: Menggunakan kata kunci bisnis "Streamlining" (merampingkan) yang sangat powerful. Judul ini jelas menunjukkan manfaat untuk kedua role.
+
 Rekomendasi Utama:
-Saya sangat merekomendasikan Konsep 1 (Nomor 1 atau 2) karena alasan berikut:
-•	Jelas dan Deskriptif: Pembaca langsung memahami apa yang dibangun, untuk apa, dan teknologinya.
-•	Lengkap: Mencakup semua komponen PICOS.
-•	Relevan: Langsung menjawab kedua RQ (Desain Arsitektur & Implementasi TTE) dalam satu judul yang padu.
-Judul Pilihan Terbaik:
-"Perancangan dan Implementasi Sistem Informasi Surat Menyurat dan Tanda Tangan Elektronik (TTE) untuk Automasi Proses Sidang Skripsi Berbasis Laravel Filament"
-Alternatif yang lebih ringkas dan modern:
-"Pengembangan Aplikasi Workflow Surat Menyurat Digital dengan TTE untuk Automasi Proses Sidang Skripsi Menggunakan Laravel Filament"
-Pilih judul yang paling sesuai dengan penekanan yang Anda inginkan dan pedoman penulisan di institusi Anda. Semua opsi di atas adalah judul yang kuat dan menarik untuk sebuah penelitian di bidang Software Engineering.
+Dari semua pilihan di atas, untuk keperluan skripsi S1 di bidang Software Engineering, saya sangat merekomendasikan:
+
+"Implementasi dan Evaluasi Fungsionalitas Aplikasi Absensi QR Code Berbasis Laravel Filament"
+
+Alasan:
+
+Komprehensif: Mencakup seluruh aktivitas RQ 1.1 (membangun dan menguji).
+
+Jelas: Pembaca langsung memahami apa yang Anda kerjakan (aplikasi absensi QR) dan teknologinya (Laravel Filament).
+
+Akademis: Struktur bahasanya sesuai untuk karya ilmiah.
+
+Terukur: Kata "Evaluasi Fungsionalitas" mengisyaratkan bahwa akan ada metode pengujian (seperti Black Box Testing) untuk membuktikan sejauh mana kebutuhan fungsional terpenuhi.
+
+Judul ini solid, mudah dipahami oleh dosen penguji, dan secara sempurna merepresentasikan tujuan dari RQ 1.1 yang Anda pilih.
 '''
 
 ```bash
